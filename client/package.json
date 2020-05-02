@@ -1,0 +1,45 @@
+{
+  "name": "receptar",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start-ios": "react-native run-ios && npm run lint-watch",
+    "start-android": "react-native run-android && npm run lint-watch",
+    "lint": "esw src/**",
+    "lint-watch": "esw -w --changed src/**",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-client": "^1.1.1",
+    "apollo-test-utils": "^0.1.1",
+    "false": "0.0.4",
+    "graphql-tag": "^2.4.2",
+    "graphql-tools": "^0.10.0",
+    "react": "16.0.0-alpha.12",
+    "react-apollo": "^1.1.2",
+    "react-native": "0.47.1",
+    "react-native-elements": "^0.17.0",
+    "react-native-vector-icons": "^4.4.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "tcomb-form-native": "^0.6.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "20.0.3",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-watch": "^3.1.2",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
